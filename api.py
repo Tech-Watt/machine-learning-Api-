@@ -5,7 +5,7 @@ import io
 from fastapi import FastAPI,UploadFile
 
 def load_model():
-    modelpath = r"C:\Users\Admin\Desktop\test data\runs\classify\train\weights\best.pt"
+    modelpath = "best.pt"
     model = YOLO(modelpath)
     return model 
 
